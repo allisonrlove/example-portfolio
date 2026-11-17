@@ -1,4 +1,7 @@
 /* === Simple Theme Example === */
+
+/* Modern typography: Plus Jakarta Sans headings, Manrope body, IBM Plex Mono details. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 /*
   LEARNING GUIDE: Creating Your First Theme
 
@@ -66,18 +69,12 @@ STEP 1: DEFINE YOUR COLOR PALETTE
   --interactive-hover: var(--sky-blue);    /* Hover states */
 
 
-  /* ===== Optional: Change Fonts ===== */
-  /*
-    Uncomment these lines to change fonts.
-    Remember to add the font import at the top of this file!
-
-    Example font import (add at top of file):
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-  */
-
-  /* --font-heading: 'Roboto', sans-serif; */
-  /* --font-body: 'Open Sans', sans-serif; */
-  /* --font-mono: 'Courier New', monospace; */
+  /* ===== Typography ===== */
+  /* A crisp geometric sans for headings, a softer sans for readable body copy,
+     and a restrained mono for labels and code. */
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
 
