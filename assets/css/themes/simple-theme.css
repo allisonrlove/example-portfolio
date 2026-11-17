@@ -78,6 +78,12 @@ STEP 1: DEFINE YOUR COLOR PALETTE
 }
 
 
+/* The homepage profile name has its own serif font rule in home.css.
+   Override that component so it uses the theme's heading font as intended. */
+.home-profile-name {
+  font-family: var(--font-heading);
+}
+
 /*****************************************************
 THAT'S IT!
 *****************************************************/
