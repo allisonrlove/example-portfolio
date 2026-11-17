@@ -1,4 +1,3 @@
-
 /* === Simple Theme Example === */
 /*
   LEARNING GUIDE: Creating Your First Theme
@@ -19,9 +18,9 @@
   - Keeps the existing Xanthan layouts and components
 */
 
-/*****************************************************
+/************************************************************
 FONT IMPORTS
-*****************************************************/
+************************************************************/
 
 /*
   Instrument Serif: Editorial serif for headings
@@ -33,38 +32,39 @@ FONT IMPORTS
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 
 
-/*****************************************************
+/************************************************************
 STEP 1: DEFINE YOUR COLOR PALETTE
-*****************************************************/
+************************************************************/
 
 :root {
   /* ===== Your Color Palette ===== */
 
-  --ocean-blue: #2c5f7c;
-  --sky-blue: #4a9bbe;
-  --cloud-white: #f7f9fb;
-  --pearl: #e8eef2;
-  --charcoal: #2d3748;
-  --slate: #718096;
+  --warm-ivory: #f7f4ec;
+  --soft-sage: #a8b5a0;
+  --deep-forest: #294238;
+  --muted-blue: #6f8f91;
+  --terracotta: #b96f58;
+  --ink: #26302c;
+  --warm-gray: #737873;
 
 
   /* ===== Map Your Colors to Site Elements ===== */
 
   /* Backgrounds */
-  --bg-page: var(--cloud-white);
-  --bg-card: var(--pearl);
-  --bg-code: var(--pearl);
-  --bg-nav: var(--ocean-blue);
+  --bg-page: var(--warm-ivory);
+  --bg-card: #eeeae0;
+  --bg-code: #e7e4da;
+  --bg-nav: var(--deep-forest);
 
   /* Text Colors */
-  --text-body: var(--charcoal);
-  --text-on-dark: var(--cloud-white);
-  --text-muted: var(--slate);
+  --text-body: var(--ink);
+  --text-on-dark: var(--warm-ivory);
+  --text-muted: var(--warm-gray);
 
   /* Accent Colors */
-  --accent-primary: var(--ocean-blue);
-  --accent-border: var(--sky-blue);
-  --interactive-hover: var(--sky-blue);
+  --accent-primary: var(--deep-forest);
+  --accent-border: var(--soft-sage);
+  --interactive-hover: var(--terracotta);
 
 
   /* ===== Typography ===== */
@@ -75,9 +75,9 @@ STEP 1: DEFINE YOUR COLOR PALETTE
 }
 
 
-/*****************************************************
+/************************************************************
 STEP 2: BODY TYPOGRAPHY
-*****************************************************/
+************************************************************/
 
 body {
   font-family: var(--font-body);
@@ -89,9 +89,9 @@ body {
 }
 
 
-/*****************************************************
+/************************************************************
 STEP 3: HEADINGS
-*****************************************************/
+************************************************************/
 
 h1,
 h2,
@@ -139,9 +139,9 @@ h6 {
 }
 
 
-/*****************************************************
+/************************************************************
 STEP 4: PARAGRAPHS AND TEXT SPACING
-*****************************************************/
+************************************************************/
 
 p {
   margin-bottom: 1.4em;
@@ -165,11 +165,12 @@ figcaption {
 }
 
 
-/*****************************************************
+/************************************************************
 STEP 5: LINKS
-*****************************************************/
+************************************************************/
 
 a {
+  color: var(--accent-primary);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
@@ -181,14 +182,15 @@ a {
 }
 
 a:hover {
+  color: var(--interactive-hover);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.25em;
 }
 
 
-/*****************************************************
+/************************************************************
 STEP 6: NAVIGATION
-*****************************************************/
+************************************************************/
 
 nav {
   font-family: var(--font-body);
@@ -198,9 +200,9 @@ nav {
 }
 
 
-/*****************************************************
+/************************************************************
 STEP 7: RESPONSIVE TYPOGRAPHY
-*****************************************************/
+************************************************************/
 
 @media (max-width: 768px) {
 
@@ -224,14 +226,16 @@ STEP 7: RESPONSIVE TYPOGRAPHY
 }
 
 
-/*****************************************************
+/************************************************************
 END OF THEME
-*****************************************************/
+************************************************************/
 
 /*
   NOTES:
 
-  - The original color palette is preserved.
+  - The original Xanthan structure is preserved.
+  - The palette uses warm ivory, sage, forest green,
+    muted blue, and terracotta.
   - Instrument Serif is used for large headings.
   - DM Sans is used for body text, navigation, and metadata.
   - Links use subtle underlines rather than button-like styling.
