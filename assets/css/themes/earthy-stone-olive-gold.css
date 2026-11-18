@@ -1,0 +1,61 @@
+/* Earthy stone / olive / restrained gold palette.
+   This file overrides colors only; typography, layout, spacing and components
+   remain controlled by the existing Xanthan stylesheets.
+*/
+
+:root {
+  /* Palette 1 — Stone, Olive & Gold */
+  --earth-background: #F3F0E8;
+  --earth-text: #292B22;
+  --earth-olive: #4E5C3A;
+  --earth-gold: #80601F;
+  --earth-surface: #E8E3D7;
+
+  /* Semantic color roles */
+  --bg-page: var(--earth-background);
+  --bg-card: var(--earth-surface);
+  --bg-code: var(--earth-surface);
+  --bg-nav: var(--earth-olive);
+  --bg-section-alt: var(--earth-surface);
+  --bg-section-alt-flat: var(--earth-surface);
+  --bg-feature-band: var(--earth-olive);
+  --bg-footer: var(--earth-olive);
+  --bg-footer-bottom: #39442B;
+
+  --text-body: var(--earth-text);
+  --text-muted: #55584D;
+  --text-on-dark: var(--earth-background);
+  --text-footer-link: var(--earth-background);
+  --text-footer-bottom: #D9DDCE;
+  --text-feature-band: var(--earth-background);
+  --text-feature-band-muted: #D9DDCE;
+  --text-feature-band-link: #E4D4A9;
+  --text-feature-band-link-hover: #FFFFFF;
+
+  /* Gold is reserved for primary actions and a few highlights. */
+  --accent-primary: var(--earth-gold);
+  --accent-primary-dark: #624A18;
+  --accent-border: #B49A68;
+  --interactive-hover: #624A18;
+  --interactive-hover-bg: #624A18;
+
+  --text-h1: var(--earth-gold);
+  --text-h2: var(--earth-olive);
+  --text-h3: var(--earth-olive);
+  --text-h4: var(--earth-text);
+  --text-h5: var(--earth-gold);
+
+  --page-header-subtitle: rgba(243, 240, 232, 0.82);
+  --page-header-caption: rgba(243, 240, 232, 0.88);
+  --page-header-caption-hover: #FFFFFF;
+}
+
+/* Keep ordinary text links olive; gold remains the rarer action/highlight color. */
+a,
+a:visited {
+  color: var(--earth-olive);
+}
+
+a:hover {
+  color: var(--earth-gold);
+}
