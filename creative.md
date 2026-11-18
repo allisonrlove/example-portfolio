@@ -31,4 +31,8 @@ Replace this text with your own. And if this page doesn't fit your portfolio at 
 
 ## Projects or Works
 
-{% include cards/card-grid.html cards=site.data.projects show-tags=false %}
+### Item Title
+Description of this piece, project, or publication. Add an image, a link, a date — whatever context helps a reader understand it.
+
+### Item Title
+Description. Keep the format consistent across entries.
