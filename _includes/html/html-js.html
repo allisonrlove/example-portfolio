@@ -261,3 +261,9 @@
 {% if site.theme_css == "museum" %}
 <script src="{{ site.baseurl }}/assets/js/museum.js" defer></script>
 {% endif %}
+
+
+<!-- Subtle scroll reveal for homepage project cards (local script; no add-ons) -->
+{% if page.name == "index.md" %}
+<script src="{{ site.baseurl }}/assets/js/home-card-reveal.js" defer></script>
+{% endif %}

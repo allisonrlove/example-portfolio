@@ -374,3 +374,25 @@ The container that lays vertical cards out in columns.
     
   }
 }
+
+
+/* Subtle homepage card reveal (activated only by the local script) */
+.home-card-reveal-ready main .h-card {
+  opacity: 0;
+  translate: 0 10px;
+  transition: opacity 550ms ease, translate 550ms ease;
+}
+
+.home-card-reveal-ready main .h-card.is-visible {
+  opacity: 0.9;
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-card-reveal-ready main .h-card,
+  .home-card-reveal-ready main .h-card.is-visible {
+    opacity: 0.9;
+    translate: none;
+    transition: none;
+  }
+}
