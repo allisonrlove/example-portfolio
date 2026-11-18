@@ -36,14 +36,17 @@ STEP 1: DEFINE YOUR COLOR PALETTE
 
 :root {
   /* ===== Your Color Palette ===== */
-  /* Replace these colors with your own preferences */
+  /* Palette 1: warm stone, olive and restrained antique gold */
 
-  --ocean-blue: #94568a;      /* Deep blue for accents */
-  --sky-blue: #4a9bbe;        /* Lighter blue for interactions */
-  --cloud-white: #f7f9fb;     /* Very light blue-tinted white */
-  --pearl: #e8eef2;           /* Light background */
-  --charcoal: #2d3748;        /* Dark text */
-  --slate: #718096;           /* Muted text */
+  --ocean-blue: #827044;      /* Muted antique gold accent */
+  --sky-blue: #52664C;        /* Deep olive link color */
+  --cloud-white: #F3F0E8;     /* Warm stone page background */
+  --pearl: #E8E4D9;           /* Slightly deeper stone for cards */
+  --charcoal: #2E332B;        /* Deep olive-charcoal body text */
+  --slate: #62685B;           /* Muted olive-grey text */
+  --olive-dark: #3D493A;      /* Navigation and dark surfaces */
+  --accent-dark: #6D5B37;     /* Darker gold for hover states */
+  --link-color: #52664C;
 
 
   /* ===== Map Your Colors to Site Elements ===== */
@@ -56,7 +59,7 @@ STEP 1: DEFINE YOUR COLOR PALETTE
   --bg-page: var(--cloud-white);     /* Main page background */
   --bg-card: var(--pearl);           /* Card and panel backgrounds */
   --bg-code: var(--pearl);           /* Code block backgrounds */
-  --bg-nav: var(--ocean-blue);       /* Navigation bar background */
+  --bg-nav: var(--olive-dark);       /* Navigation bar background */
 
   /* --- Text Colors --- */
   --text-body: var(--charcoal);      /* Main text color */
@@ -64,14 +67,24 @@ STEP 1: DEFINE YOUR COLOR PALETTE
   --text-muted: var(--slate);        /* Less important text */
 
   /* --- Accent Colors --- */
-  --accent-primary: var(--ocean-blue);     /* Links, buttons, headings */
-  --accent-border: var(--sky-blue);        /* Borders, underlines */
-  --interactive-hover: var(--sky-blue);    /* Hover states */
+  --accent-primary: var(--ocean-blue);     /* Restrained gold for key accents */
+  --accent-primary-dark: var(--accent-dark);
+  --accent-border: #D2C9B6;               /* Quiet warm stone borders */
+  --interactive-hover: var(--accent-dark); /* Gold hover state */
+
+  /* --- Link Color --- */
+  --link-color: var(--sky-blue);
+}
+
+/* Keep links distinct from the gold accent so they remain easy to identify. */
+a { color: var(--link-color); }
+a:hover { color: var(--accent-primary-dark); }
 
 
-  /* ===== Typography ===== */
-  /* A crisp geometric sans for headings, a softer sans for readable body copy,
-     and a restrained mono for labels and code. */
+/* ===== Typography ===== */
+/* A crisp geometric sans for headings, a softer sans for readable body copy,
+   and a restrained mono for labels and code. */
+:root {
   --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'Manrope', sans-serif;
   --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
