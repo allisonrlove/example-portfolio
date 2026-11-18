@@ -36,17 +36,17 @@ STEP 1: DEFINE YOUR COLOR PALETTE
 
 :root {
   /* ===== Your Color Palette ===== */
-  /* Palette 1: warm stone, olive and restrained antique gold */
+  /* Neon After Dark: electric lime, cyan, and hot pink on deep violet-black */
 
-  --ocean-blue: #827044;      /* Muted antique gold accent */
-  --sky-blue: #52664C;        /* Deep olive link color */
-  --cloud-white: #F3F0E8;     /* Warm stone page background */
-  --pearl: #E8E4D9;           /* Slightly deeper stone for cards */
-  --charcoal: #2E332B;        /* Deep olive-charcoal body text */
-  --slate: #62685B;           /* Muted olive-grey text */
-  --olive-dark: #3D493A;      /* Navigation and dark surfaces */
-  --accent-dark: #6D5B37;     /* Darker gold for hover states */
-  --link-color: #52664C;
+  --ocean-blue: #C6FF00;      /* Electric lime primary accent */
+  --sky-blue: #43E7FF;        /* Electric cyan link color */
+  --cloud-white: #101018;     /* Deep violet-black page background */
+  --pearl: #1B1B2A;           /* Raised dark surface for cards */
+  --charcoal: #F4F1FF;        /* Soft near-white main text */
+  --slate: #B7B2C9;           /* Muted lavender-grey text */
+  --olive-dark: #171725;      /* Navigation and dark surfaces */
+  --accent-dark: #FF4FD8;     /* Hot pink hover accent */
+  --link-color: #43E7FF;
 
 
   /* ===== Map Your Colors to Site Elements ===== */
@@ -63,14 +63,14 @@ STEP 1: DEFINE YOUR COLOR PALETTE
 
   /* --- Text Colors --- */
   --text-body: var(--charcoal);      /* Main text color */
-  --text-on-dark: var(--cloud-white);/* Text on dark backgrounds (like nav) */
+  --text-on-dark: var(--charcoal);   /* Text on dark backgrounds (like nav) */
   --text-muted: var(--slate);        /* Less important text */
 
   /* --- Accent Colors --- */
-  --accent-primary: var(--ocean-blue);     /* Restrained gold for key accents */
+  --accent-primary: var(--ocean-blue);     /* Electric lime for key accents */
   --accent-primary-dark: var(--accent-dark);
-  --accent-border: #D2C9B6;               /* Quiet warm stone borders */
-  --interactive-hover: var(--accent-dark); /* Gold hover state */
+  --accent-border: #45405B;               /* Subtle violet border */
+  --interactive-hover: var(--accent-dark); /* Hot pink hover state */
 
   /* --- Link Color --- */
   --link-color: var(--sky-blue);
